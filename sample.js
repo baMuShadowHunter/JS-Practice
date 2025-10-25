@@ -466,10 +466,10 @@ console.log(vote)
 // let b = parseInt (prompt("Enter second number: "));
 // let c = parseInt (prompt("Enter third number: "));
 
-// if (a >= b && a >= c){
+// if (a > b && a > c){
 //     console.log("Largest number is: ",a);
 // }
-// else if (b >= a && b >= c){
+// else if (b > a && b > c){
 //     console.log("Largest number is: ",b);
 // }
 // else{
@@ -490,9 +490,9 @@ console.log(vote)
 // let b = Number(prompt("Enter The Number :"));
 // if (b % 3 == 0 && b % 5 == 0 ){
 //     console.log(b,"Is divisible by both 3 and 5")
-// }else if(b % 3 == 0 && b % 5 !== 0 ){
+// }else if(b % 3 == 0){
 //      console.log(b,"Its divisible by 3 but not divisible by 5")
-// }else if(b % 3 !== 0 && b % 5 == 0 ){
+// }else if(b % 5 == 0 ){
 //      console.log(b,"Its divisible by 5 but not divisible by 3")
 // }else{
 //     console.log(b,"It is neither divisible by 3 nor divisible by 5")
@@ -519,14 +519,17 @@ console.log(vote)
 // console.log(a + b - c * d / e)
 
 // 6. Write a program that gets a number n from the user. The task is to print the number from 1 to n by mentioning it as odd or even number.
+// array = []
 // let n = prompt("Enter The Number:") ;
+
 // for (i=1;i<=n;i++)
 // if (i%2==0){
-//     console.log(`${i} is Even number`)
+//     array.push(`${i} EVEN`)
 // }
 // else{
-//     console.log(`${i} is Odd number`)
+//     array.push(`${i} ODD`)
 // }
+// console.log(array)
 
 // 7. Get a number input n from the user. Print the numbers 1 to n with the
 // following conditions:
