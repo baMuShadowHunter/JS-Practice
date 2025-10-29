@@ -196,117 +196,6 @@ calculate();
 // Refferd by -----> Self Coded
 
 
-// -------------------------------Student Grade Evaluator-02----------------
-
-// Concepts Covered:
-// Function declaration, return values, conditional statements, arrow functions.
-// Objective:
-// Create a function that takes marks and returns the student’s grade.
-// Requirements:
-// Function getGrade(marks) returns a grade based on score.
-
-// Logic:
-// >=90: A
-// >=80: B
-// >=70: C
-// >=60: D
-// Else: Fail
-
-// let ip=Number(prompt("Enter mark:"))
-// function getGrade(marks){
-//     if (isNaN (marks)){
-//         return "Enter Valid Number!"
-//     }else if (marks <= 100 && marks >= 90){
-//         return "A"
-//     }else if(marks <= 89 && marks >= 80){
-//         return "B"
-//     }else if(marks <= 79 && marks >= 70){
-//         return "C"
-//     }else if(marks <= 69 && marks >= 60){
-//         return "D"
-//     }else{
-//         return "FAIL"
-//     }
-// }
-// console.log(getGrade(ip))
-
-// Refferd by -----> Self Coded 
-
-// ========================3.Random Quote Generator=======================
-// Arrow functions, arrays, random number generation, callback functions.
-// Objective:
-// Display a random motivational quote each time the user clicks a button.
-// Requirements:
-// 1. Store 5–10 quotes in an array.
-// 2. Create a function getRandomQuote() that returns a random quote.
-// 3. Display the result on the page (in console or innerHTML).
-
-// <!DOCTYPE html>
-// <html lang="en">
-
-// <head>
-//     <meta charset="UTF-8">
-//     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-//     <title>js</title>
-// </head>
-
-// <body>
-//     <center>
-//         <h1>Random Quote Generator created By BaMu</h1>
-//         <p id="quoteDisplay"></p>
-//         <button id="quoteButton">Get Random Quote</button>
-//     </center>
-//     <script>
-//         let quotes = [
-//             "Every scar tells a story — not of pain, but of survival. -BaMu",
-//             "Silence speaks louder when your heart knows the truth. -BaMu",
-//             "Rise, even when the world thinks you fell. -BaMu",
-//             "Some journeys begin with heartbreak but end with destiny. -BaMu",
-//             "Your path is yours — even if it moves slow, it still moves. -BaMu",
-//             "The fire inside you will always burn louder than their doubts. -BaMu",
-//             "Feel the storm, but never forget you are the thunder. -BaMu",
-//             "Don’t stop until your dream becomes your life. -BaMu",
-//             "Broken moments create unbreakable souls. -BaMu",
-//             "One day, every struggle will make sense — trust your journey. -BaMu"
-//         ];
-
-//         document.getElementById("quoteButton").addEventListener("click", function () {
-//             let randomIndex = Math.floor(Math.random() * quotes.length);
-//             document.getElementById("quoteDisplay").innerText = quotes[randomIndex];
-//         });
-//     </script>
-// </body>
-
-// </html>
-
-// Refferd by -----> used Google for syntax help
-
-// ========================4.Temperature Converter=======================
-
-// Functions, parameters, return values, conditionals, arrow functions (optional)
-// Objective:
-// Build a temperature converter that converts between Celsius and Fahrenheit.
-// Requirements:
-    // 1.Create a function convertTemperature(value, scale)
-// 2.If scale is "C", convert to Fahrenheit → (value * 9/5) + 32
-// 3.If scale is "F", convert to Celsius → (value - 32) * 5/9
-// 4.Return the converted value.
-
-/* function convertTemperature(value, scale){
-    if (scale == "C"){
-       let f = (value * 9/5) + 32
-       return `Temperature in Fahrenheit: ${f}°F`
-    }else if(scale == "F"){
-         let c = (value - 32) * 5/9
-         return `Temperature in Celsius: ${c}°C`
-    }else{
-        return "Enter a Valid inputs"
-    }
-}
-console.log(convertTemperature(25, "C"))
-console.log(convertTemperature(100, "F")) */
-
-// Refferd by -----> Self Coded 
 
 
 // -----------------------------------------------Bala Anna------------------------------------------------
@@ -357,26 +246,133 @@ console.log(`The vowels count is ${count}`)
 //     console.log(ns)
 // }
 
+//-------------------------------------------------------------------------------
 // 5. Uppercase Each Character:
 // Loop through the string "loop" and create a new string with all letters in uppercase (without using .toUpperCase() directly on the whole string).
 
-// let str = "javascript"
-// let ns = ""
+/* let str = "javascript"
+let ns = ""
 
-// for (i=0; i<str.length; i++){
-//     let charcode = str.charCodeAt(i)
-//     if (charcode >= 97 && charcode <= 122) {
-//     charcode=charcode-32
-//     }
-//       ns += String.fromCharCode(charcode);
+for (i=0; i<str.length; i++){
+    let charcode = str.charCodeAt(i)
+    if (charcode >= 97 && charcode <= 122) {
+    charcode=charcode-32
+    }
+      ns += String.fromCharCode(charcode);
    
-// }
-//  console.log(ns)
+}
+ console.log(ns) */
 
+ // -------------------------------------------------------------------------------
+// Find the First Repeated Character:
+// Write a loop that returns the first repeated character in "abacddbec".
 
+/*  function repeat(str){
+    for (i=0; i<=str.length; i++){
+        ch = str[i]
+        if(ch === ch){
+            return ch;
+        }
+    }
+}
+console.log(repeat("abbacddbec")) 
+ */
 
+// -------------------------------------------------------------------------------
+// Sum of Elements:
+// Use a loop to calculate the sum of all numbers in the array [1, 2, 3, 4, 5].
 
+/* let a =  [1, 2, 3, 4, 5]
+let sum = 0 ;
+for (i=0; i<a.length; i++){
+   sum+=a[i]
+}
+ console.log(sum)
+ */ 
 
+// -------------------------------------------------------------------------------
+// Find the Largest Number:
+// Use a loop to find the largest number in the array [10, 3, 7, 20, 15].
+
+/* let arr = [10, 3, 7, 20, 15]
+let big=arr[0]
+for (i=0; i<arr.length; i++){
+    if(arr[i]>big){
+        big=arr[i]
+    }
+ 
+}
+console.log(big) */
+
+// -------------------------------------------------------------------------------
+// Double Each Number:
+// Create a new array where each element in [2, 4, 6, 8] is doubled.
+
+/* let ar = [2,4,6,8]
+let na=[]
+for (i=0; i<ar.length; i++){
+    if (ar[i]){
+        na.push(ar[i]**2)
+    }
+}
+console.log(na)
+ */
+
+// -------------------------------------------------------------------------------
+// Count Even Numbers:
+// Count how many even numbers are in [1, 2, 3, 4, 5, 6].
+
+/* let arr = [1, 2, 3, 4, 5, 6]
+let ar = 0
+for (i=0;i<arr.length;i++){
+    if (arr[i]%2==0){
+        ar+=1
+    }
+}
+console.log(ar) */
+
+// -------------------------------------------------------------------------------
+// Concatenate Array Elements into a String:Loop through ["I", "love", "JS"] and combine them into one string: "I love JS".
+/* let arr1 = ["I", "love", "JS"]
+let str = ""
+// let arr2 = "I love JS"
+for (i=0;i<arr1.length;i++){
+   str += arr1[i]
+   if(i < arr1.length-1){
+       str+=" "
+   }
+}
+console.log(`"${str}"`) */
+
+// -------------------------------------------------------------------------------
+// Reverse Words:
+// Given "hello world", use loops to reverse each word individually → "olleh dlrow"
+
+/* let str = "hello world"
+let str2 = str.split(" ") 
+let nstr = ""
+for (let i=0;i<str2.length;i++){
+    // nstr = str.split(" ")
+    let rstr = str2[i].split("").reverse().join("");
+    nstr += rstr;
+    if (i < str2.length - 1) {
+        nstr += " ";
+    }
+}
+console.log(nstr) */
+
+// -------------------------------------------------------------------------------
+// Find Longest Word:
+// Loop through ["apple", "banana", "kiwi", "watermelon"] and find the longest word.
+
+/* let arr = ["apple", "banana", "kiwi", "watermelon"]
+let str = ""
+for (i=0; i<arr.length;i++){
+    if (arr[i].length > str.length){
+        str = arr[i]
+    }
+}
+console.log(str) */
 
 // ==================Additional==============
 // -----------------------------1--------------------
