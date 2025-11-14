@@ -21,6 +21,8 @@ for (let keys in car){
 // 2022
 // Blue
 
+//---------> Not reffered by any sources
+
 // ----------------------------------------------Task 2-------------------------------------------------//
 //Create an object person with name and age.
 // Add a new property country.
@@ -35,6 +37,8 @@ delete person.name;
 console.log(person) */
 
 // Output: { age: 26, country: 'India' }
+
+//----------> Not reffered by any sources
 
 //----------------------------------------------Task 3-------------------------------------------------//
 // Create an object calculator with methods:
@@ -65,6 +69,8 @@ console.log(calculator.multiply(4, 2)); // 8 */
 // 2
 // 8
 
+//--------> Not reffered by any sources
+
 //----------------------------------------------Task 4-------------------------------------------------//
 //  Create an object student with nested details:
 
@@ -88,6 +94,8 @@ console.log("Science Marks", ":", student.marks.science)
 // Math Marks : 90
 // Science Marks : 92
 
+//------------------> Not reffered by any sources
+
 //----------------------------------------------Task 5-------------------------------------------------//
 // Write a program to count how many properties are inside an object.
 
@@ -102,6 +110,8 @@ let count = Object.keys(laptop).length
 console.log("Property Count:",count) */
 
 // Output: Property Count: 4
+
+//---------------> Not reffered by any sources
 
 //----------------------------------------------Task 6-------------------------------------------------//
 //  Create a shallow copy of an object using Object.assign().
@@ -137,6 +147,8 @@ console.log("Copied 2:", Cstudent) */
 // For nested objects, only the reference is copied in memory, not the actual object itself.
 // So I modify the nested object in the copied object, it also affects the original object since both objects point to the same nested object in memory.
 
+//---------> Reffered by google search for shallow copy differ deepcopy explanation
+
 //----------------------------------------------Task 7-------------------------------------------------//
 // Combine the following objects into one single object:
 // const obj1 = { id: 101, name: "Alice" };
@@ -161,6 +173,8 @@ console.log("Merged Using Spred Operator :",Merge2) */
 // Merged Using Object.asign() : { id: 101, name: 'Alice', age: 25, country: 'India', department: 'IT' }
 // Merged Using Spred Operator : { id: 101, name: 'Alice', age: 25, country: 'India', department: 'IT' }
 
+//---------> Not reffered by any sources
+
 //----------------------------------------------Task 8-------------------------------------------------//
 // Create an object and make it immutable using Object.freeze().
  
@@ -182,6 +196,8 @@ console.log(settings); */
 // Yeah, (No change occurs because object is frozen) 
 
 // Output: { theme: 'dark', fontSize: 14 }
+
+//----------> Not reffered by any sources
 
 //----------------------------------------------Task 9-------------------------------------------------//
 //  Use destructuring to extract values from this object and rename them:
@@ -213,6 +229,8 @@ console.log(settings); */
 // City : Chennai
 // Country : India
 
+//--------> Not reffered by any sources
+
 //----------------------------------------------Task 10-------------------------------------------------//
 // Write a function countProperties(obj) that counts all properties in a nested object (including nested levels).
 
@@ -240,6 +258,7 @@ console.log("Total Properties:",countProperties(obj)) */
 
 // Output: Total Properties: 6
 
+//-----> Refferd by Objects Slides for recursive function
 //----------------------------------------------Mini Project-------------------------------------------------//
 //Student Management System (Using JavaScript Objects)
 
@@ -374,3 +393,5 @@ Enter your choice (1-6):`
 </body>
 
 </html> */
+
+//reffered by google search for methods syntax
