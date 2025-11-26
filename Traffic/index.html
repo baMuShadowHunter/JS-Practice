@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic Signal Light</title>
+    <style>
+        .Traffic {
+            background-color: black;
+            width: 10%;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+        }
+
+        .Traffic-line {
+            background-color: black;
+            width: 3%;
+            height: 300px;
+            margin: auto;
+        }
+
+        .Traffic-round {
+            background-color: white;
+            width: 40%;
+            height: 50px;
+            border-radius: 100%;
+            margin: auto;
+        }
+
+        .color1 {
+            background-color: red;
+        }
+
+        .color2 {
+            background-color: yellow;
+        }
+
+        .color3 {
+            background-color: green;
+        }
+
+        .btn-1 {
+            margin: auto;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="Traffic">
+            <div class="Traffic-round"></div>
+            <div class="Traffic-round"></div>
+            <div class="Traffic-round"></div>
+        </div>
+        <div style="display: flex; align-items: center; flex-direction: column;gap: 30px; ">
+            <div class="Traffic-line"></div>
+            <div><button type="submit" class="btn-1">Click</button></div>
+        </div>
+    </div>
+
+    <script>
+        let count = 0
+        let color = document.querySelectorAll(".Traffic-round")
+        let btn = document.querySelector(".btn-1")
+        const colors = ["red", "yellow", "green"]
+
+        btn.addEventListener("click", () => {
+            color.forEach(element =>
+                element.style.background = "white"
+            );
+            color[count].style.background = colors[count];
+
+            count++
+
+            if (count >= colors.length) {
+                count = 0;
+            }
+
+            // if (count == 1) {
+            //     color[0].style.background = "red"
+            //     // color[0].classList.add("color1")
+            // } else if (count == 2) {
+            //     color[1].style.background = "yellow"
+            //     // color[1].classList.add("color2")
+            // } else if (count == 3) {
+            //     color[2].style.background = "green"
+            //     // color[2].classList.add("color3")
+            // }
+        });
+    </script>
+</body>
+
+</html>
