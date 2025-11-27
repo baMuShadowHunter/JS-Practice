@@ -6,6 +6,8 @@ console.log("Original Number:",num);
 console.log("Rounded (2 decimal places):",num.toFixed(2));
 console.log("Rounded (nearest):",Math.round(num)); */
 
+//----> Self coded
+
 //---------------------------------Task 2----------------------------------//
 //  Write a program that generates a random integer between two given numbers (inclusive).
 
@@ -14,6 +16,8 @@ let max = Number(prompt("Enter the maximum number:"));
 let C = Math.random() * (max - min + 1) + min
 console.log(`Random number between ${min} and ${max}:`,Math.round(C))
  */
+
+//----> Self-coded helped with Krishna
 
 //---------------------------------Task 3----------------------------------//
 //  Write a JavaScript program to find the sum of all digits in a given number.
@@ -33,6 +37,7 @@ function sum(){
 }
 console.log(sum()) */
 
+//----> Self coded
 //---------------------------------Task 4----------------------------------//
 // Write a JavaScript program that takes a number and formats it as currency (for example, in Indian Rupees).
 
@@ -41,6 +46,7 @@ console.log(sum()) */
 console.log('₹' + amount.toLocaleString('en-IN'));
  */
 
+//----> Self-coded and referred by the W3 schools
 //---------------------------------Task 5----------------------------------//
 
 /* // let p = 5000;
@@ -57,6 +63,7 @@ let t = Number(prompt("Enter the Time duration in years :"));
 console.log("Compound Interest:",c) 
 console.log("Total Amount:",a) */
 
+//----> Self-coded and referred by the W3 schools for the syntax
 //---------------------------------Task 6----------------------------------//
 // Write a program that converts all letters in a string to uppercase and also prints the reversed version of the string.
 
@@ -69,6 +76,7 @@ for (let i=word.length-1; i>=0; i--){
   console.log(ustr)
    console.log(nstr) */
 
+//----> Self-coded 
 //---------------------------------Task 7----------------------------------//
 //  Write a program that checks whether a given string reads the same backward and forward (ignoring case and spaces).
 
@@ -88,6 +96,8 @@ if (str == nstr){
     console.log("False")
 } */
 
+
+//----> Self-coded and referred by the W3 schools for the syntax of /\s+/g,
 //---------------------------------Task 8----------------------------------//
 //  Write a JavaScript program to count how many times a specific word appears in a sentence.
 
@@ -98,6 +108,7 @@ let count = sentence.split(word).length - 1;
 
 console.log(`${word} appears ${count} times.`); */
 
+//----> Self-coded and referred by the W3 schools for the syntax for the split method
 //---------------------------------Task 9----------------------------------//
 //  Write a JavaScript program that capitalizes the first letter of every word in a given sentence.
 
@@ -109,6 +120,7 @@ for (i=0; i<nstr.length; i++){
 let sentence1 = nstr.join(" ")
 console.log(sentence1) */
 
+//----> Self-coded 
 //---------------------------------Task 10---------------------------------//
 // Write a JavaScript program that removes duplicate characters from a string.
 
@@ -120,3 +132,5 @@ for (i=0; i<str.length; i++){
     }
 }
 console.log(nstr) */
+
+//----> Self-coded and referred by the W3 schools for the syntax of includes
